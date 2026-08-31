@@ -1,25 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
-
 metadata:
   name: backend
   namespace: aks-app
-
 spec:
   replicas: 1
-
   selector:
     matchLabels:
       app: backend
-
   template:
     metadata:
       labels:
         app: backend
-
     spec:
       containers:
         - name: backend
-          image: kartikagrahari2003/aks-backend:latest:v1
+          image: kartikagrahari2003/aks-backend:v1
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
