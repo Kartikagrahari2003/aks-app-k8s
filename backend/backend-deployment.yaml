@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
         - name: backend
-          image: kartikagrahari2003/aks-backend:latest
+          image: kartikagrahari2003/aks-backend:latest:v1
           ports:
             - containerPort: 8000
