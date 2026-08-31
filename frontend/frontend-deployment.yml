@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: aks-app-frontend
-          image: kartikagrahari2003/aks-frontend
+          image: kartikagrahari2003/aks-frontend:v1
           imagePullPolicy: Always
 
           ports:
